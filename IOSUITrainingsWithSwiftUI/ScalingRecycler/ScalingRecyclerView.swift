@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ScalingRecyclerView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
@@ -32,7 +32,10 @@ struct ContentView: View {
                         ForEach(albums, id: \.album_name) { album in
                             GeometryReader { item in
                                 AlbumView(album: album)
-                                    .scaleEffect(self.scaleValue(mainFrame: mainView.frame(in: .global).minY, minY: item.frame(in: .global).minY))
+                                    //scaling effect from the bottom
+                                    .scaleEffect(self.scaleValue(mainFrame: mainView.frame(in: .global).minY, minY: item.frame(in: .global).minY), anchor: .bottom)
+                                //adding opacity effect
+                                    .opacity(Double(self.scaleValue(mainFrame: mainView.frame(in: .global).minY, minY: item.frame(in: .global).minY)))
                             }
                             //default frame height
                                 //card height is 100
@@ -51,17 +54,23 @@ struct ContentView: View {
     
     //calculation for scaling effect
     func scaleValue(mainFrame: CGFloat, minY: CGFloat) -> CGFloat {
-        let scale = minY / mainFrame
-        
-        print(scale)
-        
-        return 1
+        //adds animation
+        withAnimation(.easeOut) {
+            //reduce top padding
+            let scale = (minY - 25) / mainFrame
+            
+            if scale > 1 {
+                return 1
+            } else {
+                return scale
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ScalingRecyclerView()
     }
 }
 

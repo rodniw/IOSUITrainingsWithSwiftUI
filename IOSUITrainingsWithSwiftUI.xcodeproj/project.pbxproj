@@ -10,7 +10,7 @@
 		14EA75C724CDE10200814B09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA75C624CDE10200814B09 /* AppDelegate.swift */; };
 		14EA75C924CDE10200814B09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA75C824CDE10200814B09 /* SceneDelegate.swift */; };
 		14EA75CC24CDE10200814B09 /* IOSUITrainingsWithSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14EA75CA24CDE10200814B09 /* IOSUITrainingsWithSwiftUI.xcdatamodeld */; };
-		14EA75CE24CDE10200814B09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA75CD24CDE10200814B09 /* ContentView.swift */; };
+		14EA75CE24CDE10200814B09 /* ScalingRecyclerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA75CD24CDE10200814B09 /* ScalingRecyclerView.swift */; };
 		14EA75D024CDE10400814B09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14EA75CF24CDE10400814B09 /* Assets.xcassets */; };
 		14EA75D324CDE10400814B09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14EA75D224CDE10400814B09 /* Preview Assets.xcassets */; };
 		14EA75D624CDE10400814B09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14EA75D424CDE10400814B09 /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		14EA75C624CDE10200814B09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14EA75C824CDE10200814B09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		14EA75CB24CDE10200814B09 /* IOSUITrainingsWithSwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IOSUITrainingsWithSwiftUI.xcdatamodel; sourceTree = "<group>"; };
-		14EA75CD24CDE10200814B09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		14EA75CD24CDE10200814B09 /* ScalingRecyclerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingRecyclerView.swift; sourceTree = "<group>"; };
 		14EA75CF24CDE10400814B09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14EA75D224CDE10400814B09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		14EA75D524CDE10400814B09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,15 +60,14 @@
 		14EA75C524CDE10200814B09 /* IOSUITrainingsWithSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				14EA75FF24CE1C4E00814B09 /* ScalingRecycler */,
 				14EA75C624CDE10200814B09 /* AppDelegate.swift */,
 				14EA75C824CDE10200814B09 /* SceneDelegate.swift */,
-				14EA75CD24CDE10200814B09 /* ContentView.swift */,
 				14EA75CF24CDE10400814B09 /* Assets.xcassets */,
 				14EA75D424CDE10400814B09 /* LaunchScreen.storyboard */,
 				14EA75D724CDE10400814B09 /* Info.plist */,
 				14EA75CA24CDE10200814B09 /* IOSUITrainingsWithSwiftUI.xcdatamodeld */,
 				14EA75D124CDE10400814B09 /* Preview Content */,
-				14EA75FB24CE03E400814B09 /* AlbumView.swift */,
 			);
 			path = IOSUITrainingsWithSwiftUI;
 			sourceTree = "<group>";
@@ -79,6 +78,15 @@
 				14EA75D224CDE10400814B09 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14EA75FF24CE1C4E00814B09 /* ScalingRecycler */ = {
+			isa = PBXGroup;
+			children = (
+				14EA75CD24CDE10200814B09 /* ScalingRecyclerView.swift */,
+				14EA75FB24CE03E400814B09 /* AlbumView.swift */,
+			);
+			path = ScalingRecycler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +162,7 @@
 			files = (
 				14EA75C724CDE10200814B09 /* AppDelegate.swift in Sources */,
 				14EA75CC24CDE10200814B09 /* IOSUITrainingsWithSwiftUI.xcdatamodeld in Sources */,
-				14EA75CE24CDE10200814B09 /* ContentView.swift in Sources */,
+				14EA75CE24CDE10200814B09 /* ScalingRecyclerView.swift in Sources */,
 				14EA75FC24CE03E400814B09 /* AlbumView.swift in Sources */,
 				14EA75C924CDE10200814B09 /* SceneDelegate.swift in Sources */,
 			);
