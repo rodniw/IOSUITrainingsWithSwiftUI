@@ -22,18 +22,40 @@ struct ContentView: View {
             .padding()
             .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
             .background(Color.white.shadow(color: Color.black.opacity(0.18), radius: 5, x: 0, y: 5))
+            .zIndex(0)
+            //z index for the stack solving of the elevations
             
-            ScrollView {
-                VStack(spacing: 15) {
-                    //sets name as id
-                    ForEach(albums, id: \.album_name) { album in
-                        AlbumView(album: album)
+            GeometryReader { mainView in
+                ScrollView {
+                    VStack(spacing: 15) {
+                        //sets name as id
+                        ForEach(albums, id: \.album_name) { album in
+                            GeometryReader { item in
+                                AlbumView(album: album)
+                                    .scaleEffect(self.scaleValue(mainFrame: mainView.frame(in: .global).minY, minY: item.frame(in: .global).minY))
+                            }
+                            //default frame height
+                                //card height is 100
+                            .frame(height: 100)
+                        }
                     }
+                    .padding(.horizontal)
+                    .padding(.top, 25)
                 }
+                .zIndex(1)
             }
         }
         .background(Color.black.opacity(0.06).edgesIgnoringSafeArea(.all))
         .edgesIgnoringSafeArea(.top)
+    }
+    
+    //calculation for scaling effect
+    func scaleValue(mainFrame: CGFloat, minY: CGFloat) -> CGFloat {
+        let scale = minY / mainFrame
+        
+        print(scale)
+        
+        return 1
     }
 }
 
