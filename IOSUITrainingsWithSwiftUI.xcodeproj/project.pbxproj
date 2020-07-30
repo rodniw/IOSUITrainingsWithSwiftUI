@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1458980A24D1830100E1E1BF /* CorouselListCustomGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458980924D1830100E1E1BF /* CorouselListCustomGrid.swift */; };
+		1458980D24D18A8C00E1E1BF /* CustomCorouselSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458980C24D18A8C00E1E1BF /* CustomCorouselSlider.swift */; };
+		1458980F24D346E700E1E1BF /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458980E24D346E700E1E1BF /* Story.swift */; };
 		14EA75C724CDE10200814B09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA75C624CDE10200814B09 /* AppDelegate.swift */; };
 		14EA75C924CDE10200814B09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA75C824CDE10200814B09 /* SceneDelegate.swift */; };
 		14EA75CC24CDE10200814B09 /* IOSUITrainingsWithSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14EA75CA24CDE10200814B09 /* IOSUITrainingsWithSwiftUI.xcdatamodeld */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		1458980924D1830100E1E1BF /* CorouselListCustomGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorouselListCustomGrid.swift; sourceTree = "<group>"; };
+		1458980C24D18A8C00E1E1BF /* CustomCorouselSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorouselSlider.swift; sourceTree = "<group>"; };
+		1458980E24D346E700E1E1BF /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		14EA75C324CDE10200814B09 /* IOSUITrainingsWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSUITrainingsWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14EA75C624CDE10200814B09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14EA75C824CDE10200814B09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,15 @@
 			path = CorouselListCustomGrid;
 			sourceTree = "<group>";
 		};
+		1458980B24D18A5D00E1E1BF /* CustomCorouselSlider */ = {
+			isa = PBXGroup;
+			children = (
+				1458980C24D18A8C00E1E1BF /* CustomCorouselSlider.swift */,
+				1458980E24D346E700E1E1BF /* Story.swift */,
+			);
+			path = CustomCorouselSlider;
+			sourceTree = "<group>";
+		};
 		14EA75BA24CDE10200814B09 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +87,7 @@
 		14EA75C524CDE10200814B09 /* IOSUITrainingsWithSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				1458980B24D18A5D00E1E1BF /* CustomCorouselSlider */,
 				1458980824D182D000E1E1BF /* CorouselListCustomGrid */,
 				14EA760024CE290C00814B09 /* TabViewPages */,
 				14EA75FF24CE1C4E00814B09 /* ScalingRecycler */,
@@ -193,6 +207,8 @@
 				14EA75C924CDE10200814B09 /* SceneDelegate.swift in Sources */,
 				14EA760224CE292900814B09 /* TabViewPages.swift in Sources */,
 				14EA760424CE295400814B09 /* Home.swift in Sources */,
+				1458980D24D18A8C00E1E1BF /* CustomCorouselSlider.swift in Sources */,
+				1458980F24D346E700E1E1BF /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
