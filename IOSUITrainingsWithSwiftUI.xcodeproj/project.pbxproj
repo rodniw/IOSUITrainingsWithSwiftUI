@@ -10,6 +10,9 @@
 		1458980A24D1830100E1E1BF /* CorouselListCustomGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458980924D1830100E1E1BF /* CorouselListCustomGrid.swift */; };
 		1458980D24D18A8C00E1E1BF /* CustomCorouselSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458980C24D18A8C00E1E1BF /* CustomCorouselSlider.swift */; };
 		1458980F24D346E700E1E1BF /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458980E24D346E700E1E1BF /* Story.swift */; };
+		1458981124D45E3600E1E1BF /* ScalingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458981024D45E3600E1E1BF /* ScalingScrollView.swift */; };
+		1458981324D45F6100E1E1BF /* CouponsDiscountItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458981224D45F6100E1E1BF /* CouponsDiscountItem.swift */; };
+		1458981524D45F9D00E1E1BF /* CouponItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458981424D45F9D00E1E1BF /* CouponItem.swift */; };
 		14EA75C724CDE10200814B09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA75C624CDE10200814B09 /* AppDelegate.swift */; };
 		14EA75C924CDE10200814B09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA75C824CDE10200814B09 /* SceneDelegate.swift */; };
 		14EA75CC24CDE10200814B09 /* IOSUITrainingsWithSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14EA75CA24CDE10200814B09 /* IOSUITrainingsWithSwiftUI.xcdatamodeld */; };
@@ -26,6 +29,9 @@
 		1458980924D1830100E1E1BF /* CorouselListCustomGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorouselListCustomGrid.swift; sourceTree = "<group>"; };
 		1458980C24D18A8C00E1E1BF /* CustomCorouselSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorouselSlider.swift; sourceTree = "<group>"; };
 		1458980E24D346E700E1E1BF /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		1458981024D45E3600E1E1BF /* ScalingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingScrollView.swift; sourceTree = "<group>"; };
+		1458981224D45F6100E1E1BF /* CouponsDiscountItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponsDiscountItem.swift; sourceTree = "<group>"; };
+		1458981424D45F9D00E1E1BF /* CouponItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponItem.swift; sourceTree = "<group>"; };
 		14EA75C324CDE10200814B09 /* IOSUITrainingsWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSUITrainingsWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14EA75C624CDE10200814B09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14EA75C824CDE10200814B09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +70,9 @@
 			children = (
 				1458980C24D18A8C00E1E1BF /* CustomCorouselSlider.swift */,
 				1458980E24D346E700E1E1BF /* Story.swift */,
+				1458981024D45E3600E1E1BF /* ScalingScrollView.swift */,
+				1458981224D45F6100E1E1BF /* CouponsDiscountItem.swift */,
+				1458981424D45F9D00E1E1BF /* CouponItem.swift */,
 			);
 			path = CustomCorouselSlider;
 			sourceTree = "<group>";
@@ -202,10 +211,13 @@
 				1458980A24D1830100E1E1BF /* CorouselListCustomGrid.swift in Sources */,
 				14EA75C724CDE10200814B09 /* AppDelegate.swift in Sources */,
 				14EA75CC24CDE10200814B09 /* IOSUITrainingsWithSwiftUI.xcdatamodeld in Sources */,
+				1458981324D45F6100E1E1BF /* CouponsDiscountItem.swift in Sources */,
 				14EA75CE24CDE10200814B09 /* ScalingRecyclerView.swift in Sources */,
+				1458981124D45E3600E1E1BF /* ScalingScrollView.swift in Sources */,
 				14EA75FC24CE03E400814B09 /* AlbumView.swift in Sources */,
 				14EA75C924CDE10200814B09 /* SceneDelegate.swift in Sources */,
 				14EA760224CE292900814B09 /* TabViewPages.swift in Sources */,
+				1458981524D45F9D00E1E1BF /* CouponItem.swift in Sources */,
 				14EA760424CE295400814B09 /* Home.swift in Sources */,
 				1458980D24D18A8C00E1E1BF /* CustomCorouselSlider.swift in Sources */,
 				1458980F24D346E700E1E1BF /* Story.swift in Sources */,
@@ -349,6 +361,7 @@
 				DEVELOPMENT_TEAM = 7LU9NRX5C4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = IOSUITrainingsWithSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,6 +382,7 @@
 				DEVELOPMENT_TEAM = 7LU9NRX5C4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = IOSUITrainingsWithSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
