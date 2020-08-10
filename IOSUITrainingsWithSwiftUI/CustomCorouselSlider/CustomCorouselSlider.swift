@@ -44,9 +44,14 @@ struct CustomCorouselSlider: View {
                 .padding(.horizontal)
                 
                 HStack {
+                    Button(action: {
+                        //withAnimation {
+                        //    //self.showDetail.toggle()
+                        //}
+                    }) {
                     Text("Купоны")
                         .font(.system(size: 15))
-                        .foregroundColor(index == 0 ? .white : Color("Color1").opacity(0.85))
+                        .foregroundColor(.white)
                         .fontWeight(.bold)
                         .padding(.vertical,6)
                         .padding(.horizontal,20)
@@ -56,10 +61,16 @@ struct CustomCorouselSlider: View {
                             
                             self.index = 0
                         }
+                    }
                     
+                    Button(action: {
+                        //withAnimation {
+                        //    //self.showDetail.toggle()
+                        //}
+                    }) {
                     Text("Скидки")
                         .font(.system(size: 15))
-                        .foregroundColor(index == 1 ? .white : Color("Color1").opacity(0.85))
+                        .foregroundColor(.white)
                         .fontWeight(.bold)
                         .padding(.vertical,6)
                         .padding(.horizontal,20)
@@ -69,10 +80,16 @@ struct CustomCorouselSlider: View {
                             
                             self.index = 1
                         }
+                    }
                     
+                        Button(action: {
+                            //withAnimation {
+                            //    //self.showDetail.toggle()
+                            //}
+                        }) {
                     Text("Магазины")
                     .font(.system(size: 15))
-                    .foregroundColor(index == 2 ? .white : Color("Color1").opacity(0.85))
+                    .foregroundColor(.white)
                     .fontWeight(.bold)
                     .padding(.vertical,6)
                     .padding(.horizontal,20)
@@ -81,6 +98,7 @@ struct CustomCorouselSlider: View {
                     .onTapGesture {
                         
                         self.index = 2
+                    }
                     }
                     
                     //Spacer()

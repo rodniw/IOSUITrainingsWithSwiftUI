@@ -14,24 +14,64 @@ struct CouponsDiscountItem: View {
     
     var body: some View {
         HStack {
-            Image(album.album_cover)
-                .resizable()
-                .frame(width: 100, height: 100)
-                .cornerRadius(15)
+            
+            HStack {
+                Text("15%")
+                    .fontWeight(.bold)
+                    .frame(width: 50, height: 50)
+                //.stroke(Color.red)
+                }
+            //.padding(.leading, 20)
+            .padding(15)
+            .overlay(
+                RoundedRectangle(cornerRadius: 8, style: .continuous)
+                    .stroke(Color.white, style: StrokeStyle(lineWidth: 3, dash: [8]))
+            )
+            .frame(width: 100, height: 120)
+            .cornerRadius(15)
+            
+            Spacer()
             
             VStack() {
+                Spacer()
+                
                 Text(album.album_name)
                     .fontWeight(.bold)
                 
-                Text(album.album_author)
+                Spacer()
+                
+                Button(action: {
+                    //withAnimation {
+                    //    //self.showDetail.toggle()
+                    //}
+                }) {
+                Text("ПОДРОБНЕЕ")
+                    .font(.system(size: 15))
+                    .foregroundColor(Color.white)
+                    .fontWeight(.bold)
+                    .padding(.vertical, 6)
+                    .padding(.horizontal, 20)
+                    .background(Color("Color").opacity(1))
+                    .cornerRadius(8)
+                }
+                
+                Spacer()
             }
-            .foregroundColor(colorScheme == .dark ? Color("Color1") : Color.black)
+            .frame(
+                minWidth: 0,
+                maxWidth: 200)
             .padding(.leading, 10)
             
-            Spacer(minLength: 0)
+            Spacer()
         }
+        .frame(
+            minWidth: 0,
+            maxWidth: .infinity,
+            maxHeight: 120)
+        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+        .background(colorScheme == .dark ? Color("bottom") : Color.white)
         .background(Color.white.shadow(color: Color.black.opacity(0.12), radius: 5, x: 0, y: 4))
-        .cornerRadius(15)
+        .cornerRadius(8)
     }
 }
 

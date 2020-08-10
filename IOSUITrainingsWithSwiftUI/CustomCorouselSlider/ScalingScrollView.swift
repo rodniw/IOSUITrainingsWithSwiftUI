@@ -24,7 +24,7 @@ struct ScalingScrollView: View {
                         }
                         //default frame height
                             //card height is 100
-                        .frame(height: 100)
+                        .frame(height: 120)
                     }
                 }
                 .padding(.horizontal)
